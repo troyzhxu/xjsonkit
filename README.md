@@ -139,7 +139,15 @@ int name = user.getAge();               // 20
 
 ### 反序列化 toList
 
+```java
+String json = "[{\"name\":\"Jack\",\"age\":20}, {\"name\":\"Tom\",\"age\":21}]";
+// 根据类型 转换为 Java List
+List<User> list = JSONKit.toList(User.class, json);
 
+int size = list.size();                 // 2
+User user1 = list.get(0);               // {"name":"Jack","age":20}
+User user2 = list.get(1);               // {"name":"Tom","age":21}
+```
 
 
 ### 正序列化 toJson
