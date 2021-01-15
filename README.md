@@ -97,6 +97,8 @@ mapper.forEach((key, data) -> {
     System.out.println(key);                // 依次输出 name 和 age
     System.out.println(data);               // 依次输出 Jack 和 20
 });
+
+System.out.println(mapper);                 // 输出 {"name":"Jack","age":20}
 ```
 
 ### 反序列化 toArray
