@@ -4,18 +4,30 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.ejlchina</groupId>
-	<artifactId>jsonkit</artifactId>
+	<artifactId>jsonkit-parent</artifactId>
 	<version>1.0.0</version>
-	
-	<name>jsonkit</name>
-	<description>超轻量级 JSON 序列化与反序列化 门面工具</description>
-	<url>https://gitee.com/ejlchina-zhxu/jsonkit</url>
-	
+	<name>JsonKit</name>
+
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>jsonkit</module>
+		<module>jsonkit-jackson</module>
+		<module>jsonkit-gson</module>
+		<module>jsonkit-fastjson</module>
+	</modules>
+
+
 	<properties>
-		<java-version>1.7</java-version>
+		<java-version>1.8</java-version>
+		<jsonkit-version>1.0.0</jsonkit-version>
+		<okhttps-data.version>2.5.2</okhttps-data.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<sonatypeOssDistMgmtSnapshotsUrl>https://oss.sonatype.org/content/repositories/snapshots/</sonatypeOssDistMgmtSnapshotsUrl>
 	</properties>
+
+	<description>超轻量级 JSON 序列化与反序列化 门面工具</description>
+	<url>https://gitee.com/ejlchina-zhxu/jsonkit</url>
 	
 	<licenses>
 		<license>
@@ -39,16 +51,6 @@
 		<url>https://gitee.com/ejlchina-zhxu/jsonkit</url>
 		<tag>v1.0.0</tag>
 	</scm>
-
-	<dependencies>
-
-		<dependency>
-			<groupId>com.ejlchina</groupId>
-			<artifactId>okhttps-data</artifactId>
-			<version>2.5.2</version>
-		</dependency>
-	
-	</dependencies>
 
   	<repositories>
 		<repository>
