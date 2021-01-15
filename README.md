@@ -1,17 +1,77 @@
 # jsonkit
 
-#### 介绍
+## 介绍
 超轻量级 JSON 序列化与反序列化 门面工具，不依赖具体 JSON 实现，让你的业务代码可以在 Jackson、Gson、Fastjson 等具体实现之间切换自如。
 
-#### 软件架构
-软件架构说明
+## 安装教程
 
+### Maven
 
-#### 安装教程
+```xml
+<dependency>
+    <groupId>com.ejlchina</groupId>
+    <artifactId>jsonkit</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+使用 Jackson 实现：
+
+```xml
+<dependency>
+    <groupId>com.ejlchina</groupId>
+    <artifactId>jsonkit-jackson</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
+
+使用 Gson 实现：
+
+```xml
+<dependency>
+    <groupId>com.ejlchina</groupId>
+    <artifactId>jsonkit-gson</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
+
+使用 Fastjson 实现：
+
+```xml
+<dependency>
+    <groupId>com.ejlchina</groupId>
+    <artifactId>jsonkit-fastjson</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
+
+以上依赖添加一个即可。
+
+### Gradle
+
+```groovy
+implementation 'com.ejlchina:jsonkit:1.0.0'
+```
+
+使用 Jackson 实现：
+
+```groovy
+implementation 'com.ejlchina:jsonkit-jackson:1.0.0'
+```
+
+使用 Gson 实现：
+
+```groovy
+implementation 'com.ejlchina:jsonkit-gson:1.0.0'
+```
+
+使用 Fastjson 实现：
+
+```groovy
+implementation 'com.ejlchina:jsonkit-fastjson:1.0.0'
+```
+
+以上依赖添加一个即可。
 
 #### 使用说明
 
@@ -21,10 +81,10 @@
 
 #### 参与贡献
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+1. Fork 本仓库
+2. 新建 Feat_xxx 分支
+3. 提交代码
+4. 新建 Pull Request
 
 
 #### 特技
