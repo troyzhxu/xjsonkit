@@ -21,6 +21,12 @@
 			<artifactId>jsonkit</artifactId>
 			<version>${jsonkit-version}</version>
 		</dependency>
+
+		<dependency>
+			<groupId>com.ejlchina</groupId>
+			<artifactId>okhttps-data-jackson</artifactId>
+			<version>${okhttps-data.version}</version>
+		</dependency>
 	
 	</dependencies>
 

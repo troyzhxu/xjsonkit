@@ -21,7 +21,13 @@
 			<artifactId>jsonkit</artifactId>
 			<version>${jsonkit-version}</version>
 		</dependency>
-	
+
+		<dependency>
+			<groupId>com.ejlchina</groupId>
+			<artifactId>okhttps-data-fastjson</artifactId>
+			<version>${okhttps-data.version}</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
