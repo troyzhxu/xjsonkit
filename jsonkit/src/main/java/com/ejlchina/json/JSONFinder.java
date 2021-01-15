@@ -6,7 +6,7 @@ import java.util.ServiceLoader;
 
 public class JSONFinder {
 
-    private static final String FACTORY_KEY = "com.ejlchina.json.JSONFactory";
+    public static final String FACTORY_KEY = "com.ejlchina.json.JSONFactory";
 
     private static DataConvertor _convertor;
 
