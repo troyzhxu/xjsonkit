@@ -163,6 +163,19 @@ System.out.println(json);               // 输出 {"age":20,"name":"Jack"}
 
 ### 配置 JSONKit
 
+如果已经添加了如 `jsonkit-jackson` 的适配包，默认不用配置即可使用。
+
+如果需要特殊配置，例如使用 Jackson 可在项目启动时做如下配置：
+
+```java
+ObjectMapper objectMapper = new ObjectMapper();
+
+// 对 ObjectMapper 进行配置...
+    
+// 对 JSONKit 进行初始化
+JSONKit.init(new JacksonDataConvertor(ObjectMapper));
+```
+
 
 ## 参与贡献
 
