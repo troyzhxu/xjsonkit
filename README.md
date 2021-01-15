@@ -78,6 +78,15 @@ implementation 'com.ejlchina:jsonkit-fastjson:1.0.0'
 
 ### 反序列化 toMapper
 
+```java
+String json = "{\"name\":\"Jack\",\"age\":20}";
+// 转换为具有映射结构的 Mapper 对象
+Mapper mapper = JSONKit.toMapper(json);
+
+String name = mapper.getString("name");     // Jack
+int age = mapper.getInt("age");             // 20
+```
+
 ### 反序列化 toArray
 
 ### 反序列化 toBean
