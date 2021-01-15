@@ -7,7 +7,6 @@ import java.util.ServiceLoader;
 public class JSONFinder {
 
     private static final String FACTORY_KEY = "com.ejlchina.json.JSONFactory";
-    private static final String DEFAULT_CONVERTOR = "com.ejlchina.okhttps.JacksonDataConvertor";
 
     private static DataConvertor _convertor;
 
@@ -40,12 +39,11 @@ public class JSONFinder {
         if (className != null) {
             JSONFactory factory = loadJSONFactory(className);
             _convertor = factory.create();
-            if (_convertor != null) {
-                return _convertor;
-            }
         }
-        _convertor = loadDefaultConvertor(className);
-        return _convertor;
+        if (_convertor != null) {
+            return _convertor;
+        }
+        throw new IllegalStateException("没有为 JOSNKit 配置 DataConvertor 或 JSONFactory");
     }
 
     private static JSONFactory loadJSONFactory(String className) {
@@ -63,23 +61,6 @@ public class JSONFinder {
             return (JSONFactory) clazz.getDeclaredConstructor().newInstance();
         } catch (ReflectiveOperationException e) {
             throw new IllegalStateException("can not instance JSONFactory: " + className, e);
-        }
-    }
-
-    private static DataConvertor loadDefaultConvertor(String className) {
-        Class<?> clazz;
-        try {
-            clazz = JSONKit.class.getClassLoader().loadClass(DEFAULT_CONVERTOR);
-        } catch (ClassNotFoundException e) {
-            throw new IllegalStateException("no JSONFactory or DataConvertor provided!", e);
-        }
-        if (!DataConvertor.class.isAssignableFrom(clazz)) {
-            throw new IllegalStateException(className + " is not subclass of com.ejlchina.okhttps.DataConvertor");
-        }
-        try {
-            return (DataConvertor) clazz.getDeclaredConstructor().newInstance();
-        } catch (ReflectiveOperationException e) {
-            throw new IllegalStateException(e);
         }
     }
 
