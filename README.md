@@ -76,9 +76,18 @@ implementation 'com.ejlchina:jsonkit-fastjson:1.0.0'
 
 ## 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+### 反序列化 toMapper
+
+### 反序列化 toArray
+
+### 反序列化 toBean
+
+### 反序列化 toList
+
+### 正序列化 toJson
+
+### 配置 JSONKit
+
 
 ## 参与贡献
 
