@@ -1,6 +1,6 @@
 package com.ejlchina.json.cases;
 
-public class Bean {
+public class User {
 
     private String name;
     private int age;

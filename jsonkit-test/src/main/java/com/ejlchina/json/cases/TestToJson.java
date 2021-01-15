@@ -10,7 +10,7 @@ public class TestToJson {
 
 
     public void test() {
-        Bean b1 = new Bean();
+        User b1 = new User();
         b1.setName("Alice");
         b1.setAge(30);
 

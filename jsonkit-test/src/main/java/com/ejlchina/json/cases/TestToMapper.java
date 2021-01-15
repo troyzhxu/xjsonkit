@@ -4,6 +4,8 @@ import com.ejlchina.json.JSONKit;
 import com.ejlchina.okhttps.Mapper;
 import org.junit.Assert;
 
+import java.util.Set;
+
 public class TestToMapper {
 
     static final String case1 = "{\"name\":\"Jack\",\"age\":20}";
