@@ -27,6 +27,13 @@
 			<artifactId>okhttps-data-gson</artifactId>
 			<version>${okhttps-data.version}</version>
 		</dependency>
+
+		<dependency>
+			<groupId>com.ejlchina</groupId>
+			<artifactId>jsonkit-test</artifactId>
+			<version>${jsonkit-version}</version>
+			<scope>test</scope>
+		</dependency>
 	
 	</dependencies>
 
