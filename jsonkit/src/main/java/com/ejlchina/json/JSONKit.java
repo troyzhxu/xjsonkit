@@ -16,8 +16,7 @@ import java.util.List;
  * @author Troy.Zhou
  * @since 1.0.0
  *
- * JSON 工具
- * 默认使用 Jackson，不依赖具体的 JSON 实现
+ * JSON 工具类，不依赖具体的 JSON 实现
  */
 public class JSONKit {
 
