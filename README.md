@@ -84,21 +84,21 @@ String json = "{\"name\":\"Jack\",\"age\":20}";
 Mapper mapper = JSONKit.toMapper(json);
 
 // 第一层的键集合大小
-int size = mapper.size();                   // 2
+int size = mapper.size();               // 2
 // 第一层的键值集合
-Set<String> keys = mapper.keySet();         // ["name", "age"]
+Set<String> keys = mapper.keySet();     // ["name", "age"]
 // 按键名访问 String 属性
-String name = mapper.getString("name");     // Jack
+String name = mapper.getString("name"); // Jack
 // 按键名访问 int 属性
-int age = mapper.getInt("age");             // 20
+int age = mapper.getInt("age");         // 20
     
 // 遍历 Mapper 对象
 mapper.forEach((key, data) -> {
-    System.out.println(key);                // 依次输出 name 和 age
-    System.out.println(data);               // 依次输出 Jack 和 20
+    System.out.println(key);            // 依次输出 name 和 age
+    System.out.println(data);           // 依次输出 Jack 和 20
 });
 
-System.out.println(mapper);                 // 输出 {"name":"Jack","age":20}
+System.out.println(mapper);             // 输出 {"name":"Jack","age":20}
 ```
 
 ### 反序列化 toArray
@@ -109,25 +109,33 @@ String json = "[20,{\"name\":\"Jack\"},\"JsonKit\"]";
 Array array = JSONKit.toArray(json);
 
 // 数组大小
-int size = array.size();                    // 3
+int size = array.size();                // 3
 // 按下标获取 int 数据
-int value = array.getInt(0);                // 20
+int value = array.getInt(0);            // 20
 // 按下标获取 Mapper 数据
-Mapper mapper = array.getMapper(1);         // {"name":"Jack"}
+Mapper mapper = array.getMapper(1);     // {"name":"Jack"}
 // 按下标获取 String 数据
-String string = array.getString(2);         // JsonKit
+String string = array.getString(2);     // JsonKit
 
 // 遍历 Array 对象
 array.forEach(((index, data) -> {
-    System.out.println(index);              // 依次输出 0、 1 和 2
-    System.out.println(data);               // 依次输出 20、 {"name":"Jack"} 和 JsonKit
+    System.out.println(index);          // 依次输出 0、 1 和 2
+    System.out.println(data);           // 依次输出 20、 {"name":"Jack"} 和 JsonKit
 }));
 
-System.out.println(array);                  // 输出 [20,{"name":"Jack"},"JsonKit"]
+System.out.println(array);              // 输出 [20,{"name":"Jack"},"JsonKit"]
 ```
 
-
 ### 反序列化 toBean
+
+```java
+String json = "{\"name\":\"Jack\",\"age\":20}";
+// 根据类型 转换为 Java Bean
+User user = JSONKit.toBean(User.class, json);
+
+String name = user.getName();           // Jack
+int name = user.getAge();               // 20
+```
 
 ### 反序列化 toList
 
