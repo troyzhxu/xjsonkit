@@ -2,7 +2,7 @@
 
 ## 介绍
 
-超轻量级 JSON 序列化与反序列化 门面框架，不依赖具体 JSON 实现，让你的业务代码可以在 Jackson、Gson、Fastjson 等具体实现之间切换自如。
+超轻量级 JSON **正序列化** 与 **反序列化** 的 **门面框架**，不依赖具体的 JSON 实现，让你的业务代码可以不同的 JSON 实现（如：Jackson、Gson、Fastjson 等）之间 **切换自如**！
 
 ## 安装教程
 
@@ -138,6 +138,9 @@ int name = user.getAge();               // 20
 ```
 
 ### 反序列化 toList
+
+
+
 
 ### 正序列化 toJson
 
