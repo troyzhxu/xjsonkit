@@ -149,8 +149,17 @@ User user1 = list.get(0);               // {"name":"Jack","age":20}
 User user2 = list.get(1);               // {"name":"Tom","age":21}
 ```
 
-
 ### 正序列化 toJson
+
+```java
+User user = new User();
+user.setName("Jack");
+user.setAge(20);
+
+String json = JSONKit.toJson(user);     // 转换为 JSON 字符串
+
+System.out.println(json);               // 输出 {"age":20,"name":"Jack"}
+```
 
 ### 配置 JSONKit
 
