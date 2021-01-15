@@ -1,7 +1,8 @@
 # jsonkit
 
 ## 介绍
-超轻量级 JSON 序列化与反序列化 门面工具，不依赖具体 JSON 实现，让你的业务代码可以在 Jackson、Gson、Fastjson 等具体实现之间切换自如。
+
+超轻量级 JSON 序列化与反序列化 门面框架，不依赖具体 JSON 实现，让你的业务代码可以在 Jackson、Gson、Fastjson 等具体实现之间切换自如。
 
 ## 安装教程
 
