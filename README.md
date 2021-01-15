@@ -92,7 +92,7 @@ String name = mapper.getString("name");     // Jack
 // 按键名访问 int 属性
 int age = mapper.getInt("age");             // 20
     
-// 遍历 JSON (第一层)
+// 遍历 Mapper 对象
 mapper.forEach((key, data) -> {
     System.out.println(key);                // 依次输出 name 和 age
     System.out.println(data);               // 依次输出 Jack 和 20
@@ -104,12 +104,26 @@ System.out.println(mapper);                 // 输出 {"name":"Jack","age":20}
 ### 反序列化 toArray
 
 ```java
-String json = "[1, 2, {\"name\":\"Jack\"}]";
-// 转换为具有映射结构的 Mapper 对象
-Mapper mapper = JSONKit.toMapper(json);
+String json = "[20,{\"name\":\"Jack\"},\"JsonKit\"]";
+// 转换为具有数组结构的 Array 对象
+Array array = JSONKit.toArray(json);
 
-String name = mapper.getString("name");     // Jack
-int age = mapper.getInt("age");             // 20
+// 数组大小
+int size = array.size();                    // 3
+// 按下标获取 int 数据
+int value = array.getInt(0);                // 20
+// 按下标获取 Mapper 数据
+Mapper mapper = array.getMapper(1);         // {"name":"Jack"}
+// 按下标获取 String 数据
+String string = array.getString(2);         // JsonKit
+
+// 遍历 Array 对象
+array.forEach(((index, data) -> {
+    System.out.println(index);              // 依次输出 0、 1 和 2
+    System.out.println(data);               // 依次输出 20、 {"name":"Jack"} 和 JsonKit
+}));
+
+System.out.println(array);                  // 输出 [20,{"name":"Jack"},"JsonKit"]
 ```
 
 
