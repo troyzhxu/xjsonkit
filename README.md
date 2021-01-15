@@ -1,4 +1,4 @@
-# jsonkit
+# JsonKit
 
 ## 介绍
 
@@ -83,11 +83,33 @@ String json = "{\"name\":\"Jack\",\"age\":20}";
 // 转换为具有映射结构的 Mapper 对象
 Mapper mapper = JSONKit.toMapper(json);
 
+// 第一层的键集合大小
+int size = mapper.size();                       // 2
+// 第一层的键值集合
+Set<String> keys = mapper.keySet();             // ["name", "age"]
+// 按键名访问 String 属性
+String name = mapper.getString("name");     // Jack
+// 按键名访问 int 属性
+int age = mapper.getInt("age");             // 20
+    
+// 遍历 JSON (第一层)
+mapper.forEach((key, data) -> {
+    System.out.println(key);                    // 依次输出 name 和 age
+    System.out.println(data.toString());        // 依次输出 Jack 和 20
+});
+```
+
+### 反序列化 toArray
+
+```java
+String json = "[1, 2, {\"name\":\"Jack\"}]";
+// 转换为具有映射结构的 Mapper 对象
+Mapper mapper = JSONKit.toMapper(json);
+
 String name = mapper.getString("name");     // Jack
 int age = mapper.getInt("age");             // 20
 ```
 
-### 反序列化 toArray
 
 ### 反序列化 toBean
 
