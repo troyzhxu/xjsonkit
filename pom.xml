@@ -15,6 +15,7 @@
 		<module>jsonkit-jackson</module>
 		<module>jsonkit-gson</module>
 		<module>jsonkit-fastjson</module>
+		<module>jsonkit-test</module>
 	</modules>
 
 
