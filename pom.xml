@@ -4,14 +4,14 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.ejlchina</groupId>
-	<artifactId>jsonkit-parent</artifactId>
+	<artifactId>jsonkit</artifactId>
 	<version>1.0.0</version>
 	<name>JsonKit</name>
 
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>jsonkit</module>
+		<module>jsonkit-core</module>
 		<module>jsonkit-jackson</module>
 		<module>jsonkit-gson</module>
 		<module>jsonkit-fastjson</module>

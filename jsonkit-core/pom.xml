@@ -4,13 +4,13 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>jsonkit</artifactId>
-	<name>JsonKit</name>
+	<artifactId>jsonkit-core</artifactId>
+	<name>JsonKit Core</name>
 	<packaging>jar</packaging>
 
 	<parent>
 		<groupId>com.ejlchina</groupId>
-		<artifactId>jsonkit-parent</artifactId>
+		<artifactId>jsonkit</artifactId>
 		<version>1.0.0</version>
 	</parent>
 
@@ -25,7 +25,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>jsonkit</finalName>
+		<finalName>jsonkit-core</finalName>
 	</build>
 
 </project>
