@@ -10,15 +10,17 @@
 
 ### Maven
 
+使用 JsonKit API：
+
 ```xml
 <dependency>
     <groupId>com.ejlchina</groupId>
-    <artifactId>jsonkit</artifactId>
+    <artifactId>jsonkit-core</artifactId>
     <version>1.0.0</version>
 </dependency>
 ```
 
-使用 Jackson 实现：
+使用 Jackson 底层实现：
 
 ```xml
 <dependency>
@@ -28,7 +30,7 @@
 </dependency>
 ```
 
-使用 Gson 实现：
+使用 Gson 底层实现：
 
 ```xml
 <dependency>
@@ -38,7 +40,7 @@
 </dependency>
 ```
 
-使用 Fastjson 实现：
+使用 Fastjson 底层实现：
 
 ```xml
 <dependency>
@@ -53,22 +55,22 @@
 ### Gradle
 
 ```groovy
-implementation 'com.ejlchina:jsonkit:1.0.0'
+implementation 'com.ejlchina:jsonkit-core:1.0.0'
 ```
 
-使用 Jackson 实现：
+使用 Jackson 底层实现：
 
 ```groovy
 implementation 'com.ejlchina:jsonkit-jackson:1.0.0'
 ```
 
-使用 Gson 实现：
+使用 Gson 底层实现：
 
 ```groovy
 implementation 'com.ejlchina:jsonkit-gson:1.0.0'
 ```
 
-使用 Fastjson 实现：
+使用 Fastjson 底层实现：
 
 ```groovy
 implementation 'com.ejlchina:jsonkit-fastjson:1.0.0'
