@@ -18,8 +18,8 @@
 
 		<dependency>
 			<groupId>com.ejlchina</groupId>
-			<artifactId>okhttps-data</artifactId>
-			<version>${okhttps-data.version}</version>
+			<artifactId>data-core</artifactId>
+			<version>${data.version}</version>
 		</dependency>
 	
 	</dependencies>

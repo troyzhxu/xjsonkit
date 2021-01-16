@@ -1,6 +1,6 @@
 package com.ejlchina.json;
 
-import com.ejlchina.okhttps.DataConvertor;
+import com.ejlchina.data.DataConvertor;
 
 import java.util.ServiceLoader;
 

@@ -1,8 +1,8 @@
 package com.ejlchina.json.cases;
 
 import com.ejlchina.json.JSONKit;
-import com.ejlchina.okhttps.Array;
-import com.ejlchina.okhttps.Mapper;
+import com.ejlchina.data.Array;
+import com.ejlchina.data.Mapper;
 import org.junit.Assert;
 
 public class TestToArray {

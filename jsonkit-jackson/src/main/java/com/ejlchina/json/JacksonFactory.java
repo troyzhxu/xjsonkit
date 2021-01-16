@@ -1,7 +1,7 @@
 package com.ejlchina.json;
 
-import com.ejlchina.okhttps.DataConvertor;
-import com.ejlchina.okhttps.JacksonDataConvertor;
+import com.ejlchina.data.DataConvertor;
+import com.ejlchina.data.JacksonDataConvertor;
 
 public class JacksonFactory implements JSONFactory {
 

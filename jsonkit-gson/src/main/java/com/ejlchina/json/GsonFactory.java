@@ -1,7 +1,7 @@
 package com.ejlchina.json;
 
-import com.ejlchina.okhttps.DataConvertor;
-import com.ejlchina.okhttps.GsonDataConvertor;
+import com.ejlchina.data.DataConvertor;
+import com.ejlchina.data.GsonDataConvertor;
 
 public class GsonFactory implements JSONFactory {
 

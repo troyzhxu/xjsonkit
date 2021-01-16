@@ -24,8 +24,8 @@
 
 		<dependency>
 			<groupId>com.ejlchina</groupId>
-			<artifactId>okhttps-data-fastjson</artifactId>
-			<version>${okhttps-data.version}</version>
+			<artifactId>data-fastjson</artifactId>
+			<version>${data.version}</version>
 		</dependency>
 
 		<dependency>

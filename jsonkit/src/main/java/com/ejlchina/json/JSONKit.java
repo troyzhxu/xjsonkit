@@ -1,9 +1,9 @@
 package com.ejlchina.json;
 
 
-import com.ejlchina.okhttps.Array;
-import com.ejlchina.okhttps.DataConvertor;
-import com.ejlchina.okhttps.Mapper;
+import com.ejlchina.data.Array;
+import com.ejlchina.data.DataConvertor;
+import com.ejlchina.data.Mapper;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;

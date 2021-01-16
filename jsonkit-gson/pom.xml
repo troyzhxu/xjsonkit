@@ -24,8 +24,8 @@
 
 		<dependency>
 			<groupId>com.ejlchina</groupId>
-			<artifactId>okhttps-data-gson</artifactId>
-			<version>${okhttps-data.version}</version>
+			<artifactId>data-gson</artifactId>
+			<version>${data.version}</version>
 		</dependency>
 
 		<dependency>
