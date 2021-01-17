@@ -1,10 +1,14 @@
 # JsonKit
 
+<p align="center">
+    <a href="https://maven-badges.herokuapp.com/maven-central/com.ejlchina/jsonkit/"><img src="https://maven-badges.herokuapp.com/maven-central/com.ejlchina/jsonkit/badge.svg" alt="Maven Central"></a>
+    <a href="https://gitee.com/ejlchina-zhxu/jsonkit/blob/master/LICENSE"><img src="https://img.shields.io/hexpm/l/plug.svg" alt="License"></a>
+    <a href="https://github.com/ejlchina"><img src="https://img.shields.io/badge/%E4%BD%9C%E8%80%85-ejlchina-orange.svg" alt="Troy.Zhou"></a>
+</p>
+
 ## 介绍
 
 超轻量级 JSON **正序列化** 与 **反序列化** 的 **门面框架**，不依赖具体的 JSON 实现，让业务代码与 Jackson、Gson、Fastjson 等彻底 **解耦**，让你可以在需要的时候轻松切换项目底层实现！
-
-#### 将于 2021年1月20日 前正式发布到 Maven 中央仓库，敬请 Star 关注。
 
 ## 安装教程
 
