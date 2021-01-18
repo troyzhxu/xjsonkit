@@ -186,6 +186,15 @@ JSONKit.init(new JacksonDataConvertor(ObjectMapper));
 
 使用其它扩展包也类似操作。
 
+## 友情链接
+
+[**[ OkHttps ]** 轻量却强大的 HTTP 客户端，前后端通用，支持 WebSocket 与 Stomp 协议](https://gitee.com/ejlchina-zhxu/okhttps)
+
+[**[ Bean Searcher ]** 轻量级数据库条件检索引擎，一行代码实现复杂条件列表检索！](https://gitee.com/ejlchina-zhxu/bean-searcher)
+
+[**[ JsonKit ]** 超轻量级 JSON 门面工具，用法简单，不依赖具体实现，让业务代码与 Jackson、Gson、Fastjson 等解耦！](https://gitee.com/ejlchina-zhxu/jsonkit)
+
+
 ## 参与贡献
 
 1. Star Fork 本仓库
