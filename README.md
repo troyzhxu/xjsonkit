@@ -173,7 +173,7 @@ System.out.println(json);               // 输出 {"age":20,"name":"Jack"}
 
 如果已经添加了如 `jsonkit-jackson` 的适配包，默认不用任何配置即可正常使用。
 
-单如果需要特殊配置，例如使用 Jackson 时，可在如下操作：
+但如果需要特殊配置，例如使用 Jackson 时，可在如下操作：
 
 ```java
 ObjectMapper objectMapper = new ObjectMapper();
