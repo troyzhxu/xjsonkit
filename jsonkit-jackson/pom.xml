@@ -11,7 +11,7 @@
 	<parent>
 		<groupId>com.ejlchina</groupId>
 		<artifactId>jsonkit</artifactId>
-		<version>1.0.0</version>
+		<version>1.1.0</version>
 	</parent>
 
 	<dependencies>
@@ -19,7 +19,7 @@
 		<dependency>
 			<groupId>com.ejlchina</groupId>
 			<artifactId>jsonkit-core</artifactId>
-			<version>${jsonkit-version}</version>
+			<version>${project.version}</version>
 		</dependency>
 
 		<dependency>
@@ -31,7 +31,7 @@
 		<dependency>
 			<groupId>com.ejlchina</groupId>
 			<artifactId>jsonkit-test</artifactId>
-			<version>${jsonkit-version}</version>
+			<version>${project.version}</version>
 			<scope>test</scope>
 		</dependency>
 	

@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.ejlchina</groupId>
 	<artifactId>jsonkit</artifactId>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
 	<name>JsonKit</name>
 
 	<packaging>pom</packaging>
@@ -20,7 +20,6 @@
 
 	<properties>
 		<java-version>1.8</java-version>
-		<jsonkit-version>1.0.0</jsonkit-version>
 		<data.version>1.1.0</data.version>
 		<junit.version>4.13.2</junit.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
