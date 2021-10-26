@@ -1,7 +1,8 @@
-package com.ejlchina.json;
+package com.ejlchina.json.fastjson;
 
 import com.ejlchina.data.DataConvertor;
-import com.ejlchina.data.FastjsonDataConvertor;
+import com.ejlchina.data.fastjson.FastjsonDataConvertor;
+import com.ejlchina.json.JSONFactory;
 
 public class FastjsonFactory implements JSONFactory {
 
