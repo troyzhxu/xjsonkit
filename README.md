@@ -20,7 +20,7 @@
 <dependency>
     <groupId>com.ejlchina</groupId>
     <artifactId>jsonkit-core</artifactId>
-    <version>1.1.0</version>
+    <version>1.1.1</version>
 </dependency>
 ```
 
@@ -30,7 +30,7 @@
 <dependency>
     <groupId>com.ejlchina</groupId>
     <artifactId>jsonkit-jackson</artifactId>
-    <version>1.1.0</version>
+    <version>1.1.1</version>
 </dependency>
 ```
 
@@ -40,7 +40,7 @@
 <dependency>
     <groupId>com.ejlchina</groupId>
     <artifactId>jsonkit-gson</artifactId>
-    <version>1.1.0</version>
+    <version>1.1.1</version>
 </dependency>
 ```
 
@@ -50,7 +50,7 @@
 <dependency>
     <groupId>com.ejlchina</groupId>
     <artifactId>jsonkit-fastjson</artifactId>
-    <version>1.1.0</version>
+    <version>1.1.1</version>
 </dependency>
 ```
 
@@ -59,25 +59,25 @@
 ### Gradle
 
 ```groovy
-implementation 'com.ejlchina:jsonkit-core:1.1.0'
+implementation 'com.ejlchina:jsonkit-core:1.1.1'
 ```
 
 使用 Jackson 底层实现：
 
 ```groovy
-implementation 'com.ejlchina:jsonkit-jackson:1.1.0'
+implementation 'com.ejlchina:jsonkit-jackson:1.1.1'
 ```
 
 使用 Gson 底层实现：
 
 ```groovy
-implementation 'com.ejlchina:jsonkit-gson:1.1.0'
+implementation 'com.ejlchina:jsonkit-gson:1.1.1'
 ```
 
 使用 Fastjson 底层实现：
 
 ```groovy
-implementation 'com.ejlchina:jsonkit-fastjson:1.1.0'
+implementation 'com.ejlchina:jsonkit-fastjson:1.1.1'
 ```
 
 以上依赖添加一个即可。
