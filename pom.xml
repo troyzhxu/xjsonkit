@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.ejlchina</groupId>
 	<artifactId>jsonkit</artifactId>
-	<version>1.1.1</version>
+	<version>1.2.0</version>
 	<name>JsonKit</name>
 
 	<packaging>pom</packaging>
@@ -59,7 +59,7 @@
 		<connection>scm:git:https://gitee.com/ejlchina-zhxu/jsonkit.git</connection>
 		<developerConnection>scm:git:https://gitee.com/ejlchina-zhxu/jsonkit.git</developerConnection>
 		<url>https://gitee.com/ejlchina-zhxu/jsonkit</url>
-		<tag>v1.1.1</tag>
+		<tag>v1.2.0</tag>
 	</scm>
 
   	<repositories>
