@@ -4,6 +4,7 @@ package com.ejlchina.json;
 import com.ejlchina.data.Array;
 import com.ejlchina.data.DataConvertor;
 import com.ejlchina.data.Mapper;
+import com.ejlchina.data.TypeRef;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
@@ -57,6 +58,18 @@ public class JSONKit {
      */
     public static <T> T toBean(Type type, String jsonObj) {
         return JSONFinder.find().toBean(type, inputStream(jsonObj), CHARSET);
+    }
+
+    /**
+     * JSON 字符串转换为 Bean 对象
+     * @param typeRef Bean 类型
+     * @param jsonObj JSON 字符串
+     * @param <T> 泛型
+     * @return Bean 对象
+     * @since v1.2.0
+     */
+    public static <T> T toBean(TypeRef<T> typeRef, String jsonObj) {
+        return toBean(typeRef.getType(), jsonObj);
     }
 
     /**
