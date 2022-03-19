@@ -3,6 +3,7 @@ package com.ejlchina.json.cases;
 import com.ejlchina.json.JSONKit;
 import org.junit.Assert;
 
+import java.nio.charset.StandardCharsets;
 import java.util.List;
 
 public class TestToList {
@@ -10,7 +11,13 @@ public class TestToList {
     static final String case1 = "[{\"name\": \"Jack\",\"age\":20},{\"name\": \"Tom\",\"age\":21}]";
 
     public void test() {
-        List<User> list = JSONKit.toList(User.class, case1);
+        checkCase(JSONKit.toList(User.class, case1));
+        System.out.println("TestToList case1 ok!");
+        checkCase(JSONKit.toList(User.class, case1.getBytes(StandardCharsets.UTF_8)));
+        System.out.println("TestToList case2 ok!");
+    }
+
+    private void checkCase(List<User> list) {
         Assert.assertNotNull(list);
         Assert.assertEquals(2, list.size());
         User b1 = list.get(0);
@@ -21,7 +28,6 @@ public class TestToList {
         Assert.assertEquals(20, b1.getAge());
         Assert.assertEquals("Tom", b2.getName());
         Assert.assertEquals(21, b2.getAge());
-        System.out.println("case1 ok!");
     }
 
 }

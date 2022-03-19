@@ -14,18 +14,24 @@ public class TestToMapper {
 
     public void test() {
         Mapper m1 = JSONKit.toMapper(case1);
-        Assert.assertEquals(2, m1.size());
-        Assert.assertTrue(m1.has("name"));
-        Assert.assertTrue(m1.has("age"));
-        Assert.assertFalse(m1.has("sex"));
-        Assert.assertArrayEquals(new String[]{"name", "age"}, m1.keySet().toArray());
-        Assert.assertEquals("Jack", m1.getString("name"));
-        Assert.assertEquals(20, m1.getInt("age"));
-        Assert.assertEquals(20, m1.getLong("age"));
-        Assert.assertEquals("20", m1.getString("age"));
-        System.out.println("case1 ok!");
+        checkCase1(m1);
+        System.out.println("TestToMapper case1 ok!");
 
         Mapper m2 = JSONKit.toMapper(case2);
+        checkCase2(m2);
+        System.out.println("TestToMapper case2 ok!");
+
+        Mapper m3 = JSONKit.toMapper(case1);
+        checkCase1(m3);
+        System.out.println("TestToMapper case3 ok!");
+
+        Mapper m4 = JSONKit.toMapper(case2);
+        checkCase2(m4);
+        System.out.println("TestToMapper case4 ok!");
+
+    }
+
+    private void checkCase2(Mapper m2) {
         Assert.assertEquals(1, m2.size());
         Assert.assertTrue(m2.has("school"));
         Assert.assertFalse(m2.has("name"));
@@ -35,7 +41,19 @@ public class TestToMapper {
         Assert.assertTrue(sch.has("name"));
         Assert.assertFalse(sch.has("school"));
         Assert.assertEquals("High School", sch.getString("name"));
-        System.out.println("case2 ok!");
+
+    }
+
+    private void checkCase1(Mapper m1) {
+        Assert.assertEquals(2, m1.size());
+        Assert.assertTrue(m1.has("name"));
+        Assert.assertTrue(m1.has("age"));
+        Assert.assertFalse(m1.has("sex"));
+        Assert.assertArrayEquals(new String[]{"name", "age"}, m1.keySet().toArray());
+        Assert.assertEquals("Jack", m1.getString("name"));
+        Assert.assertEquals(20, m1.getInt("age"));
+        Assert.assertEquals(20, m1.getLong("age"));
+        Assert.assertEquals("20", m1.getString("age"));
     }
 
 
