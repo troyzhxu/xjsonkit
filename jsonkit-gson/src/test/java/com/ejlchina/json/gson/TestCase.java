@@ -1,6 +1,6 @@
-package com.ejlchina.json;
+package com.ejlchina.json.gson;
 
-import com.ejlchina.json.gson.GsonFactory;
+import com.ejlchina.json.test.TestCases;
 import org.junit.Test;
 
 public class TestCase {

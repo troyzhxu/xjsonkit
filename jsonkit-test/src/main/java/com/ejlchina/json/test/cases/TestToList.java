@@ -1,4 +1,4 @@
-package com.ejlchina.json.cases;
+package com.ejlchina.json.test.cases;
 
 import com.ejlchina.json.JSONKit;
 import org.junit.Assert;
@@ -12,9 +12,9 @@ public class TestToList {
 
     public void test() {
         checkCase(JSONKit.toList(User.class, case1));
-        System.out.println("TestToList case1 ok!");
+        System.out.println("case1 ok!");
         checkCase(JSONKit.toList(User.class, case1.getBytes(StandardCharsets.UTF_8)));
-        System.out.println("TestToList case2 ok!");
+        System.out.println("case2 ok!");
     }
 
     private void checkCase(List<User> list) {

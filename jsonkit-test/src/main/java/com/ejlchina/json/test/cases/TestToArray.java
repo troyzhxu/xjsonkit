@@ -1,4 +1,4 @@
-package com.ejlchina.json.cases;
+package com.ejlchina.json.test.cases;
 
 import com.ejlchina.json.JSONKit;
 import com.ejlchina.data.Array;
@@ -17,16 +17,16 @@ public class TestToArray {
     public void test() {
         Array a1 = JSONKit.toArray(case1);
         checkCase1(a1);
-        System.out.println("TestToArray case1 ok!");
+        System.out.println("case1 ok!");
         Array a2 = JSONKit.toArray(case2);
         checkCase2(a2);
-        System.out.println("TestToArray case2 ok!");
+        System.out.println("case2 ok!");
         Array a3 = JSONKit.toArray(case1.getBytes(StandardCharsets.UTF_8));
         checkCase1(a3);
-        System.out.println("TestToArray case3 ok!");
+        System.out.println("case3 ok!");
         Array a4 = JSONKit.toArray(case2.getBytes(StandardCharsets.UTF_8));
         checkCase2(a4);
-        System.out.println("TestToArray case4 ok!");
+        System.out.println("case4 ok!");
     }
 
     private void checkCase1(Array a1) {

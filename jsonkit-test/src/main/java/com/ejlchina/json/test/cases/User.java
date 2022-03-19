@@ -1,4 +1,4 @@
-package com.ejlchina.json.cases;
+package com.ejlchina.json.test.cases;
 
 public class User {
 

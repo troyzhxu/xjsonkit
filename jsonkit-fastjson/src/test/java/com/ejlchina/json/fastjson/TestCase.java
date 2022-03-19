@@ -1,7 +1,7 @@
-package com.ejlchina.json;
+package com.ejlchina.json.fastjson;
 
 
-import com.ejlchina.json.fastjson.FastjsonFactory;
+import com.ejlchina.json.test.TestCases;
 import org.junit.Test;
 
 public class TestCase {

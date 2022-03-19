@@ -1,4 +1,4 @@
-package com.ejlchina.json.cases;
+package com.ejlchina.json.test.cases;
 
 import com.ejlchina.json.JSONKit;
 import org.junit.Assert;
@@ -6,7 +6,6 @@ import org.junit.Assert;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 public class TestToJson {
@@ -25,14 +24,14 @@ public class TestToJson {
 
         Assert.assertTrue(JSON_OBJ_1.equals(json1) || JSON_OBJ_2.equals(json1));
 
-        System.out.println("TestToJson case1 ok!");
+        System.out.println("case1 ok!");
 
         byte[] jsonBytes = JSONKit.toJsonBytes(b1);
 
         Assert.assertTrue(Arrays.equals(jsonBytes, JSON_OBJ_1.getBytes(StandardCharsets.UTF_8))
                 || Arrays.equals(jsonBytes, JSON_OBJ_2.getBytes(StandardCharsets.UTF_8)));
 
-        System.out.println("TestToJson case2 ok!");
+        System.out.println("case2 ok!");
 
         List<Object> list = new ArrayList<>();
         list.add(1);
@@ -41,11 +40,11 @@ public class TestToJson {
 
         Assert.assertEquals(JSON_ARR, JSONKit.toJson(list));
 
-        System.out.println("TestToJson case3 ok!");
+        System.out.println("case3 ok!");
 
-        Assert.assertEquals(JSON_ARR.getBytes(StandardCharsets.UTF_8), JSONKit.toJsonBytes(list));
+        Assert.assertArrayEquals(JSON_ARR.getBytes(StandardCharsets.UTF_8), JSONKit.toJsonBytes(list));
 
-        System.out.println("TestToJson case4 ok!");
+        System.out.println("case4 ok!");
     }
 
 

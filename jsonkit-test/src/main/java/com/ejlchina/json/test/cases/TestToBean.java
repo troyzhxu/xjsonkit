@@ -1,4 +1,4 @@
-package com.ejlchina.json.cases;
+package com.ejlchina.json.test.cases;
 
 import com.ejlchina.json.JSONKit;
 import org.junit.Assert;
@@ -12,10 +12,10 @@ public class TestToBean {
     public void test() {
         User bean1 = JSONKit.toBean(User.class, case1);
         checkCase(bean1);
-        System.out.println("TestToBean case1 ok!");
+        System.out.println("case1 ok!");
         User bean2 = JSONKit.toBean(User.class, case1.getBytes(StandardCharsets.UTF_8));
         checkCase(bean2);
-        System.out.println("TestToBean case2 ok!");
+        System.out.println("case2 ok!");
     }
 
     private void checkCase(User bean) {

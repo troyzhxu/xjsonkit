@@ -1,6 +1,8 @@
-package com.ejlchina.json;
+package com.ejlchina.json.test;
 
-import com.ejlchina.json.cases.*;
+import com.ejlchina.json.JSONFactory;
+import com.ejlchina.json.JSONKit;
+import com.ejlchina.json.test.cases.*;
 
 public class TestCases {
 
