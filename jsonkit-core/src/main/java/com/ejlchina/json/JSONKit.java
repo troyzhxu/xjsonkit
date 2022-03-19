@@ -6,8 +6,6 @@ import com.ejlchina.data.DataConvertor;
 import com.ejlchina.data.Mapper;
 import com.ejlchina.data.TypeRef;
 
-import java.io.ByteArrayInputStream;
-import java.io.InputStream;
 import java.lang.reflect.Type;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
@@ -37,7 +35,7 @@ public class JSONKit {
      * @return Mapper
      */
     public static Mapper toMapper(String jsonObj) {
-        return JSONFinder.find().toMapper(inputStream(jsonObj), CHARSET);
+        return JSONFinder.find().toMapper(jsonObj);
     }
 
     /**
@@ -46,7 +44,7 @@ public class JSONKit {
      * @return Array
      */
     public static Array toArray(String jsonArr) {
-        return JSONFinder.find().toArray(inputStream(jsonArr), CHARSET);
+        return JSONFinder.find().toArray(jsonArr);
     }
 
     /**
@@ -57,7 +55,7 @@ public class JSONKit {
      * @return Bean 对象
      */
     public static <T> T toBean(Type type, String jsonObj) {
-        return JSONFinder.find().toBean(type, inputStream(jsonObj), CHARSET);
+        return JSONFinder.find().toBean(type, jsonObj);
     }
 
     /**
@@ -80,7 +78,7 @@ public class JSONKit {
      * @return Bean 对象
      */
     public static <T> List<T> toList(Class<T> type, String jsonObj) {
-        return JSONFinder.find().toList(type, inputStream(jsonObj), CHARSET);
+        return JSONFinder.find().toList(type, jsonObj);
     }
 
     /**
@@ -89,11 +87,7 @@ public class JSONKit {
      * @return JSON 字符串
      */
     public static String toJson(Object object) {
-        return new String(JSONFinder.find().serialize(object, CHARSET), CHARSET);
-    }
-
-    private static InputStream inputStream(String json) {
-        return new ByteArrayInputStream(json.getBytes(CHARSET));
+        return JSONFinder.find().serialize(object);
     }
 
 }
