@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.ejlchina</groupId>
 	<artifactId>jsonkit</artifactId>
-	<version>1.3.1</version>
+	<version>1.3.2</version>
 	<name>JsonKit</name>
 
 	<packaging>pom</packaging>
