@@ -22,23 +22,29 @@ public class JSONFinder {
      * 寻找 JSON 转换器
      * @return DataConvertor
      */
-    public static synchronized DataConvertor find() {
+    public static DataConvertor find() {
         // 如果存在，直接返回
         if (_convertor != null) {
             return _convertor;
         }
-        // 使用 SPI 方式寻找 JSONFactory
-        for (JSONFactory factory : ServiceLoader.load(JSONFactory.class)) {
-            _convertor = factory.create();
-            if (_convertor != null) {
-                return _convertor;
+        synchronized (JSONFinder.class) {
+            if (_convertor == null) {
+                // 使用 SPI 方式寻找 JSONFactory
+                for (JSONFactory factory : ServiceLoader.load(JSONFactory.class)) {
+                    _convertor = factory.create();
+                    if (_convertor != null) {
+                        break;
+                    }
+                }
             }
-        }
-        // 从 System Properties 从寻找 JSONFactory
-        String className = System.getProperty(FACTORY_KEY);
-        if (className != null) {
-            JSONFactory factory = loadJSONFactory(className);
-            _convertor = factory.create();
+            if (_convertor == null) {
+                // 从 System Properties 从寻找 JSONFactory
+                String className = System.getProperty(FACTORY_KEY);
+                if (className != null) {
+                    JSONFactory factory = loadJSONFactory(className);
+                    _convertor = factory.create();
+                }
+            }
         }
         if (_convertor != null) {
             return _convertor;
