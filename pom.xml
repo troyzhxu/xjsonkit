@@ -12,9 +12,14 @@
 
 	<modules>
 		<module>xjsonkit-api</module>
-		<module>xjsonkit-jackson</module>
-		<module>xjsonkit-gson</module>
 		<module>xjsonkit-fastjson</module>
+		<module>xjsonkit-fastjson2</module>
+		<module>xjsonkit-fastjson2-jsonb</module>
+		<module>xjsonkit-gson</module>
+		<module>xjsonkit-jackson</module>
+		<module>xjsonkit-jackson-xml</module>
+		<module>xjsonkit-jackson-yaml</module>
+		<module>xjsonkit-snack3</module>
 		<module>xjsonkit-test</module>
 	</modules>
 

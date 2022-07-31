@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>xjsonkit-snack3</artifactId>
+	<name>xJsonKit Snack3</name>
+	<packaging>jar</packaging>
+
+	<parent>
+		<groupId>cn.zhxu</groupId>
+		<artifactId>xjsonkit</artifactId>
+		<version>1.4.0</version>
+	</parent>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>cn.zhxu</groupId>
+			<artifactId>xjsonkit-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>cn.zhxu</groupId>
+			<artifactId>data-snack3</artifactId>
+			<version>${data.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>cn.zhxu</groupId>
+			<artifactId>xjsonkit-test</artifactId>
+			<version>${project.version}</version>
+			<scope>test</scope>
+		</dependency>
+	
+	</dependencies>
+
+	<build>
+		<finalName>jsonkit-gson</finalName>
+	</build>
+
+</project>
