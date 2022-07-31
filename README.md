@@ -20,7 +20,7 @@
 <dependency>
     <groupId>cn.zhxu</groupId>
     <artifactId>xjsonkit-api</artifactId>
-    <version>1.3.3</version>
+    <version>1.4.0</version>
 </dependency>
 ```
 
@@ -30,7 +30,7 @@
 <dependency>
     <groupId>cn.zhxu</groupId>
     <artifactId>jsonkit-jackson</artifactId>
-    <version>1.3.3</version>
+    <version>1.4.0</version>
 </dependency>
 ```
 
@@ -40,7 +40,7 @@
 <dependency>
     <groupId>cn.zhxu</groupId>
     <artifactId>jsonkit-gson</artifactId>
-    <version>1.3.3</version>
+    <version>1.4.0</version>
 </dependency>
 ```
 
@@ -50,7 +50,7 @@
 <dependency>
     <groupId>cn.zhxu</groupId>
     <artifactId>jsonkit-fastjson</artifactId>
-    <version>1.3.3</version>
+    <version>1.4.0</version>
 </dependency>
 ```
 
@@ -59,25 +59,25 @@
 ### Gradle
 
 ```groovy
-implementation 'cn.zhxu:xjsonkit-api:1.3.3'
+implementation 'cn.zhxu:xjsonkit-api:1.4.0'
 ```
 
 使用 Jackson 底层实现：
 
 ```groovy
-implementation 'cn.zhxu:jsonkit-jackson:1.3.3'
+implementation 'cn.zhxu:jsonkit-jackson:1.4.0'
 ```
 
 使用 Gson 底层实现：
 
 ```groovy
-implementation 'cn.zhxu:jsonkit-gson:1.3.3'
+implementation 'cn.zhxu:jsonkit-gson:1.4.0'
 ```
 
 使用 Fastjson 底层实现：
 
 ```groovy
-implementation 'cn.zhxu:jsonkit-fastjson:1.3.3'
+implementation 'cn.zhxu:jsonkit-fastjson:1.4.0'
 ```
 
 以上依赖添加一个即可。
