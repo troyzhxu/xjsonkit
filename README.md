@@ -2,8 +2,8 @@
 
 <p>
     <a href="https://maven-badges.herokuapp.com/maven-central/com.ejlchina/jsonkit/"><img src="https://maven-badges.herokuapp.com/maven-central/com.ejlchina/jsonkit/badge.svg" alt="Maven Central"></a>
-    <a href="https://gitee.com/ejlchina-zhxu/jsonkit/blob/master/LICENSE"><img src="https://img.shields.io/hexpm/l/plug.svg" alt="License"></a>
-    <a href="https://github.com/ejlchina"><img src="https://img.shields.io/badge/%E4%BD%9C%E8%80%85-ejlchina-orange.svg" alt="Troy.Zhou"></a>
+    <a href="https://gitee.com/troyzhxu/jsonkit/blob/master/LICENSE"><img src="https://img.shields.io/hexpm/l/plug.svg" alt="License"></a>
+    <a href="https://github.com/troyzhxu"><img src="https://img.shields.io/badge/%E4%BD%9C%E8%80%85-troyzhxu-orange.svg" alt="Troy.Zhou"></a>
 </p>
 
 ## 介绍
@@ -188,9 +188,9 @@ JSONKit.init(new JacksonDataConvertor(ObjectMapper));
 
 ## 友情链接
 
-[**[ OkHttps ]** 轻量却强大的 HTTP 客户端，前后端通用，支持 WebSocket 与 Stomp 协议](https://gitee.com/ejlchina-zhxu/okhttps)
+[**[ OkHttps ]** 轻量却强大的 HTTP 客户端，前后端通用，支持 WebSocket 与 Stomp 协议](https://gitee.com/troyzhxu/okhttps)
 
-[**[ Bean Searcher ]** 轻量级数据库条件检索引擎，一行代码实现复杂条件列表检索！](https://gitee.com/ejlchina-zhxu/bean-searcher)
+[**[ Bean Searcher ]** 轻量级数据库条件检索引擎，一行代码实现复杂条件列表检索！](https://gitee.com/troyzhxu/bean-searcher)
 
 ## 参与贡献
 
