@@ -4,18 +4,18 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.ejlchina</groupId>
-	<artifactId>jsonkit</artifactId>
+	<artifactId>xjsonkit</artifactId>
 	<version>1.3.3</version>
 	<name>JsonKit</name>
 
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>jsonkit-core</module>
-		<module>jsonkit-jackson</module>
-		<module>jsonkit-gson</module>
-		<module>jsonkit-fastjson</module>
-		<module>jsonkit-test</module>
+		<module>xjsonkit-api</module>
+		<module>xjsonkit-jackson</module>
+		<module>xjsonkit-gson</module>
+		<module>xjsonkit-fastjson</module>
+		<module>xjsonkit-test</module>
 	</modules>
 
 	<properties>

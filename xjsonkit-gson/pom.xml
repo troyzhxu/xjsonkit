@@ -4,13 +4,13 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>jsonkit-core</artifactId>
-	<name>JsonKit Core</name>
+	<artifactId>xjsonkit-gson</artifactId>
+	<name>xJsonKit Gson</name>
 	<packaging>jar</packaging>
 
 	<parent>
 		<groupId>com.ejlchina</groupId>
-		<artifactId>jsonkit</artifactId>
+		<artifactId>xjsonkit</artifactId>
 		<version>1.3.3</version>
 	</parent>
 
@@ -18,14 +18,27 @@
 
 		<dependency>
 			<groupId>com.ejlchina</groupId>
-			<artifactId>data-core</artifactId>
+			<artifactId>xjsonkit-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.ejlchina</groupId>
+			<artifactId>data-gson</artifactId>
 			<version>${data.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.ejlchina</groupId>
+			<artifactId>xjsonkit-test</artifactId>
+			<version>${project.version}</version>
+			<scope>test</scope>
 		</dependency>
 	
 	</dependencies>
 
 	<build>
-		<finalName>jsonkit-core</finalName>
+		<finalName>jsonkit-gson</finalName>
 	</build>
 
 </project>

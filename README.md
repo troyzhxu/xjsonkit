@@ -19,7 +19,7 @@
 ```xml
 <dependency>
     <groupId>com.ejlchina</groupId>
-    <artifactId>jsonkit-core</artifactId>
+    <artifactId>xjsonkit-api</artifactId>
     <version>1.3.3</version>
 </dependency>
 ```
@@ -59,7 +59,7 @@
 ### Gradle
 
 ```groovy
-implementation 'com.ejlchina:jsonkit-core:1.3.3'
+implementation 'com.ejlchina:xjsonkit-api:1.3.3'
 ```
 
 使用 Jackson 底层实现：
