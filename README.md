@@ -153,14 +153,28 @@ System.out.println(json);               // 输出 {"age":20,"name":"Jack"}
 
 ```java
 ObjectMapper objectMapper = new ObjectMapper();
+// TODO: 对 ObjectMapper 进行配置...
 
-// 对 ObjectMapper 进行配置...
-    
-// 对 JsonKit 进行初始化
+// 对 JsonKit 进行配置
 Config.json(new JacksonDataConvertor(ObjectMapper));
 ```
 
 其中 `Config` 是 `cn.zhxu.xjson.spi` 包下的配置类，它里面有 `json(..)`、`jsonb(..)`、`xml(..)`、`yaml(..)` 四个配置方法，它们分别作用于 `JsonKit`、`JsonbKit`、`XmlKit`、`YamlKit` 四个工具类。
+
+### 自定义底层实现
+
+只需实现 `DataConvertor` 接口即可：
+
+```java
+// 自定义 JSON 实现
+Config.json(new MyJsonDataConvertor());
+// 自定义 JSONB 实现
+Config.json(new MyJsonbDataConvertor());
+// 自定义 XML 实现
+Config.json(new MyXmlDataConvertor());
+// 自定义 YAML 实现
+Config.json(new MyYamlDataConvertor());
+```
 
 ## 友情链接
 
