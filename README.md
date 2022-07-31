@@ -12,84 +12,60 @@
 
 ## 安装教程
 
-### Maven
-
-使用 JsonKit API：
-
-```xml
-<dependency>
-    <groupId>cn.zhxu</groupId>
-    <artifactId>xjsonkit-api</artifactId>
-    <version>1.4.0</version>
-</dependency>
-```
-
-使用 Jackson 底层实现：
-
-```xml
-<dependency>
-    <groupId>cn.zhxu</groupId>
-    <artifactId>jsonkit-jackson</artifactId>
-    <version>1.4.0</version>
-</dependency>
-```
-
-使用 Gson 底层实现：
-
-```xml
-<dependency>
-    <groupId>cn.zhxu</groupId>
-    <artifactId>jsonkit-gson</artifactId>
-    <version>1.4.0</version>
-</dependency>
-```
-
-使用 Fastjson 底层实现：
-
-```xml
-<dependency>
-    <groupId>cn.zhxu</groupId>
-    <artifactId>jsonkit-fastjson</artifactId>
-    <version>1.4.0</version>
-</dependency>
-```
-
-以上依赖添加一个即可。
-
-### Gradle
+#### API 依赖
 
 ```groovy
-implementation 'cn.zhxu:xjsonkit-api:1.4.0'
+implementation 'cn.zhxu:xjsonkit-api:1.5.0'
 ```
 
-使用 Jackson 底层实现：
+该依赖提供了 `JsonKit`、`JsonbKit`、`XmlKit`、`YamlKit` 四个工具类。
+
+#### Json 相关实现
 
 ```groovy
-implementation 'cn.zhxu:jsonkit-jackson:1.4.0'
+// Fastjson 实现
+implementation 'cn.zhxu:xjsonkit-fastjson:1.5.0'
+// Fastjson2 实现
+implementation 'cn.zhxu:xjsonkit-fastjson2:1.5.0'
+// Gson 实现
+implementation 'cn.zhxu:xjsonkit-gson:1.5.0'
+// Jackson 实现
+implementation 'cn.zhxu:xjsonkit-jackson:1.5.0'
+// Snack3 实现
+implementation 'cn.zhxu:xjsonkit-snack3:1.5.0'
 ```
 
-使用 Gson 底层实现：
+#### JSONB 相关实现
 
 ```groovy
-implementation 'cn.zhxu:jsonkit-gson:1.4.0'
+// Fastjson2-JSONB 实现
+implementation 'cn.zhxu:xjsonkit-fastjson2-jsonb:1.5.0'
 ```
 
-使用 Fastjson 底层实现：
+#### Xml 相关实现
 
 ```groovy
-implementation 'cn.zhxu:jsonkit-fastjson:1.4.0'
+// Jackson Xml
+implementation 'cn.zhxu:xjsonkit-jackson-xml:1.5.0'
 ```
 
-以上依赖添加一个即可。
+#### Yaml 相关实现
+
+```groovy
+// Jackson Yaml
+implementation 'cn.zhxu:xjsonkit-jackson-yaml:1.5.0'
+```
 
 ## 使用说明
+
+X Json Kit 共提供了 `JsonKit`、`JsonbKit`、`XmlKit`、`YamlKit` 四个工具类。下文以 `JsonKit` 为例简述其用法，其它工具类使用方法类似。
 
 ### 反序列化 toMapper
 
 ```java
 String json = "{\"name\":\"Jack\",\"age\":20}";
 // 转换为具有映射结构的 Mapper 对象
-Mapper mapper = JSONKit.toMapper(json);
+Mapper mapper = JsonKit.toMapper(json);
 
 // 第一层的键集合大小
 int size = mapper.size();               // 2
@@ -114,7 +90,7 @@ System.out.println(mapper);             // 输出 {"name":"Jack","age":20}
 ```java
 String json = "[20,{\"name\":\"Jack\"},\"JsonKit\"]";
 // 转换为具有数组结构的 Array 对象
-Array array = JSONKit.toArray(json);
+Array array = JsonKit.toArray(json);
 
 // 数组大小
 int size = array.size();                // 3
@@ -139,7 +115,7 @@ System.out.println(array);              // 输出 [20,{"name":"Jack"},"JsonKit"]
 ```java
 String json = "{\"name\":\"Jack\",\"age\":20}";
 // 根据类型 转换为 Java Bean
-User user = JSONKit.toBean(User.class, json);
+User user = JsonKit.toBean(User.class, json);
 
 String name = user.getName();           // Jack
 int name = user.getAge();               // 20
@@ -150,7 +126,7 @@ int name = user.getAge();               // 20
 ```java
 String json = "[{\"name\":\"Jack\",\"age\":20}, {\"name\":\"Tom\",\"age\":21}]";
 // 根据类型 转换为 Java List
-List<User> list = JSONKit.toList(User.class, json);
+List<User> list = JsonKit.toList(User.class, json);
 
 int size = list.size();                 // 2
 User user1 = list.get(0);               // {"name":"Jack","age":20}
@@ -164,12 +140,12 @@ User user = new User();
 user.setName("Jack");
 user.setAge(20);
 
-String json = JSONKit.toJson(user);     // 转换为 JSON 字符串
+String json = JsonKit.toJson(user);     // 转换为 JSON 字符串
 
 System.out.println(json);               // 输出 {"age":20,"name":"Jack"}
 ```
 
-### 配置 JSONKit
+## 配置方法
 
 如果已经添加了如 `jsonkit-jackson` 的适配包，默认不用任何配置即可正常使用。
 
@@ -180,10 +156,11 @@ ObjectMapper objectMapper = new ObjectMapper();
 
 // 对 ObjectMapper 进行配置...
     
-// 对 JSONKit 进行初始化
-JSONKit.init(new JacksonDataConvertor(ObjectMapper));
+// 对 JsonKit 进行初始化
+Config.json(new JacksonDataConvertor(ObjectMapper));
 ```
 
+其中 `Config` 是 `cn.zhxu.xjson.spi` 包下的配置类，它里面有 `json(..)`、`jsonb(..)`、`xml(..)`、`yaml(..)` 四个配置方法，它们分别作用于 `JsonKit`、`JsonbKit`、`XmlKit`、`YamlKit` 四个工具类。
 使用其它扩展包也类似操作。
 
 ## 友情链接
