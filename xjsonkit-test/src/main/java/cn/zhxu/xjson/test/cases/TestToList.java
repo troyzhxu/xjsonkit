@@ -1,6 +1,6 @@
 package cn.zhxu.xjson.test.cases;
 
-import cn.zhxu.xjson.JSONKit;
+import cn.zhxu.xjson.JsonKit;
 import org.junit.Assert;
 
 import java.nio.charset.StandardCharsets;
@@ -11,9 +11,9 @@ public class TestToList {
     static final String case1 = "[{\"name\": \"Jack\",\"age\":20},{\"name\": \"Tom\",\"age\":21}]";
 
     public void test() {
-        checkCase(JSONKit.toList(User.class, case1));
+        checkCase(JsonKit.toList(User.class, case1));
         System.out.println("case1 ok!");
-        checkCase(JSONKit.toList(User.class, case1.getBytes(StandardCharsets.UTF_8)));
+        checkCase(JsonKit.toList(User.class, case1.getBytes(StandardCharsets.UTF_8)));
         System.out.println("case2 ok!");
     }
 

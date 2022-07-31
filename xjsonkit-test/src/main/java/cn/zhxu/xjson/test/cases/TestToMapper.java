@@ -1,6 +1,6 @@
 package cn.zhxu.xjson.test.cases;
 
-import cn.zhxu.xjson.JSONKit;
+import cn.zhxu.xjson.JsonKit;
 import cn.zhxu.data.Mapper;
 import org.junit.Assert;
 
@@ -13,19 +13,19 @@ public class TestToMapper {
     static final String case2 = "{\"school\":{\"name\":\"High School\"}}";
 
     public void test() {
-        Mapper m1 = JSONKit.toMapper(case1);
+        Mapper m1 = JsonKit.toMapper(case1);
         checkCase1(m1);
         System.out.println("case1 ok!");
 
-        Mapper m2 = JSONKit.toMapper(case2);
+        Mapper m2 = JsonKit.toMapper(case2);
         checkCase2(m2);
         System.out.println("case2 ok!");
 
-        Mapper m3 = JSONKit.toMapper(case1);
+        Mapper m3 = JsonKit.toMapper(case1);
         checkCase1(m3);
         System.out.println("case3 ok!");
 
-        Mapper m4 = JSONKit.toMapper(case2);
+        Mapper m4 = JsonKit.toMapper(case2);
         checkCase2(m4);
         System.out.println("case4 ok!");
 

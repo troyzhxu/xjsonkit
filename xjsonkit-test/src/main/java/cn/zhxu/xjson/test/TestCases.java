@@ -1,15 +1,14 @@
 package cn.zhxu.xjson.test;
 
-import cn.zhxu.xjson.JSONFactory;
-import cn.zhxu.xjson.JSONKit;
+import cn.zhxu.data.DataConvertor;
+import cn.zhxu.xjson.JsonKit;
 import cn.zhxu.xjson.test.cases.*;
-import cn.zhxu.json.test.cases.*;
 
 public class TestCases {
 
 
-    public TestCases(JSONFactory factory) {
-        JSONKit.init(factory.create());
+    public TestCases(DataConvertor convertor) {
+        JsonKit.init(convertor);
     }
 
 

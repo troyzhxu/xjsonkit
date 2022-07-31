@@ -1,6 +1,6 @@
 package cn.zhxu.xjson.gson;
 
-import cn.zhxu.xjson.JSONKit;
+import cn.zhxu.xjson.JsonKit;
 import cn.zhxu.xjson.test.TestCases;
 import org.junit.Test;
 
@@ -10,7 +10,7 @@ public class TestCase {
 
     @Test
     public void test() {
-        new TestCases(new GsonFactory()).run();
+        new TestCases(new GsonFactory().create()).run();
     }
 
 
@@ -19,7 +19,7 @@ public class TestCase {
         String json = "{\"czjg\": \"3\", \"zfnr\": \"车库出租住人\", \"fdzkdh\": \"\", \"fdzkxm\": \"\", \"czqzFile\": [], \"xczpFile\": [], \"zfzqzFile\": [], \"fdzkqzFile\": [], \"xfaqzrsFile\": []}";
         long t0 = System.currentTimeMillis();
         for (int i = 0; i < 20000; i++) {
-            JSONKit.toBean(Model.class, json);
+            JsonKit.toBean(Model.class, json);
         }
         long t1 = System.currentTimeMillis();
         System.out.println("耗时：" + (t1 - t0));

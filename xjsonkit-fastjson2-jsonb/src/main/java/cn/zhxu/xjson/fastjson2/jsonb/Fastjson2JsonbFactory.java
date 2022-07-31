@@ -1,10 +1,10 @@
-package cn.zhxu.xjson.fastjson;
+package cn.zhxu.xjson.fastjson2.jsonb;
 
 import cn.zhxu.data.DataConvertor;
 import cn.zhxu.data.fastjson2.jsonb.Fastjson2JsonbDataConvertor;
-import cn.zhxu.xjson.JSONFactory;
+import cn.zhxu.xjson.spi.JsonbFactory;
 
-public class FastjsonFactory implements JSONFactory {
+public class Fastjson2JsonbFactory implements JsonbFactory {
 
     @Override
     public DataConvertor create() {

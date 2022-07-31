@@ -1,7 +1,8 @@
 package cn.zhxu.xjson.fastjson;
 
 
-import cn.zhxu.xjson.JSONKit;
+import cn.zhxu.xjson.JsonKit;
+import cn.zhxu.xjson.fastjson2.jsonb.Fastjson2JsonbFactory;
 import cn.zhxu.xjson.test.TestCases;
 import org.junit.Test;
 
@@ -11,7 +12,7 @@ public class TestCase {
 
     @Test
     public void test() {
-        new TestCases(new FastjsonFactory()).run();
+        new TestCases(new Fastjson2JsonbFactory().create()).run();
     }
 
     @Test
@@ -19,7 +20,7 @@ public class TestCase {
         String json = "{\"czjg\": \"3\", \"zfnr\": \"车库出租住人\", \"fdzkdh\": \"\", \"fdzkxm\": \"\", \"czqzFile\": [], \"xczpFile\": [], \"zfzqzFile\": [], \"fdzkqzFile\": [], \"xfaqzrsFile\": []}";
         long t0 = System.currentTimeMillis();
         for (int i = 0; i < 20000; i++) {
-            JSONKit.toBean(Model.class, json);
+            JsonKit.toBean(Model.class, json);
         }
         long t1 = System.currentTimeMillis();
         System.out.println("耗时：" + (t1 - t0));
