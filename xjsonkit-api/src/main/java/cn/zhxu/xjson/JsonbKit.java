@@ -23,14 +23,6 @@ public class JsonbKit {
     private static final Charset CHARSET = StandardCharsets.UTF_8;
 
     /**
-     * 初始化
-     * @param convertor 转换器
-     */
-    public static void init(DataConvertor convertor) {
-        Config.jsonb(convertor);
-    }
-
-    /**
      * JSONB 的 Base64 字符串转换为 Mapper 对象
      * @param jsonbBase64 JSONB 的 Base64 字符串
      * @return Mapper

@@ -1,7 +1,6 @@
 package cn.zhxu.xjson;
 
 import cn.zhxu.data.Array;
-import cn.zhxu.data.DataConvertor;
 import cn.zhxu.data.Mapper;
 import cn.zhxu.data.TypeRef;
 import cn.zhxu.xjson.spi.Config;
@@ -21,14 +20,6 @@ import java.util.List;
 public class JsonKit {
 
     private static final Charset CHARSET = StandardCharsets.UTF_8;
-
-    /**
-     * 初始化
-     * @param convertor 转换器
-     */
-    public static void init(DataConvertor convertor) {
-        Config.json(convertor);
-    }
 
     /**
      * JSON 字符串转换为 Mapper 对象
