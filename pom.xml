@@ -28,7 +28,6 @@
 		<data.version>1.5.0</data.version>
 		<junit.version>4.13.2</junit.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<sonatypeOssDistMgmtSnapshotsUrl>https://oss.sonatype.org/content/repositories/snapshots/</sonatypeOssDistMgmtSnapshotsUrl>
 	</properties>
 
 	<dependencies>
@@ -42,7 +41,7 @@
 
 
 	<description>超轻量级 JSON 序列化与反序列化 门面工具</description>
-	<url>https://gitee.com/ejlchina-zhxu/jsonkit</url>
+	<url>https://gitee.com/troyzhxu/xjsonkit</url>
 	
 	<licenses>
 		<license>
@@ -61,36 +60,20 @@
 	</developers>
 	
 	<scm>
-		<connection>scm:git:https://gitee.com/ejlchina-zhxu/jsonkit.git</connection>
-		<developerConnection>scm:git:https://gitee.com/ejlchina-zhxu/jsonkit.git</developerConnection>
-		<url>https://gitee.com/ejlchina-zhxu/jsonkit</url>
+		<connection>scm:git:https://gitee.com/troyzhxu/xjsonkit.git</connection>
+		<developerConnection>scm:git:https://gitee.com/troyzhxu/xjsonkit.git</developerConnection>
+		<url>https://gitee.com/troyzhxu/xjsonkit</url>
 		<tag>v1.4.0</tag>
 	</scm>
 
-  	<repositories>
-		<repository>
-			<id>sonatype-nexus-snapshots</id>
-			<name>Sonatype Nexus Snapshots</name>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
-	
 	<distributionManagement>
 		<snapshotRepository>
-			<id>sonatype-nexus-snapshots</id>
-			<name>Sonatype Nexus Snapshots</name>
-			<url>${sonatypeOssDistMgmtSnapshotsUrl}</url>
+			<id>ossrh</id>
+			<url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
 		</snapshotRepository>
 		<repository>
-			<id>sonatype-nexus-staging</id>
-			<name>Nexus Release Repository</name>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+			<id>ossrh</id>
+			<url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 		</repository>
 	</distributionManagement>
   
