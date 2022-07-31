@@ -58,7 +58,7 @@ implementation 'cn.zhxu:xjsonkit-jackson-yaml:1.5.0'
 
 ## 使用说明
 
-X Json Kit 共提供了 `JsonKit`、`JsonbKit`、`XmlKit`、`YamlKit` 四个工具类。下文以 `JsonKit` 为例简述其用法，其它工具类使用方法类似。
+xJsonKit 共提供了 `JsonKit`、`JsonbKit`、`XmlKit`、`YamlKit` 四个工具类。下文以 `JsonKit` 为例简述其用法，其它工具类使用方法类似。
 
 ### 反序列化 toMapper
 
@@ -147,9 +147,9 @@ System.out.println(json);               // 输出 {"age":20,"name":"Jack"}
 
 ## 配置方法
 
-如果已经添加了如 `jsonkit-jackson` 的适配包，默认不用任何配置即可正常使用。
+如果已经添加了如 `xjsonkit-jackson` 的底层实现包，则不用任何配置即可正常使用。
 
-但如果需要特殊配置，例如使用 Jackson 时，可在如下操作：
+但如果需要特殊配置，例如使用 Jackson 时，可进行如下配置：
 
 ```java
 ObjectMapper objectMapper = new ObjectMapper();
