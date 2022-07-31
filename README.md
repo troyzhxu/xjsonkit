@@ -169,11 +169,11 @@ Config.json(new JacksonDataConvertor(ObjectMapper));
 // 自定义 JSON 实现
 Config.json(new MyJsonDataConvertor());
 // 自定义 JSONB 实现
-Config.json(new MyJsonbDataConvertor());
+Config.jsonb(new MyJsonbDataConvertor());
 // 自定义 XML 实现
-Config.json(new MyXmlDataConvertor());
+Config.xml(new MyXmlDataConvertor());
 // 自定义 YAML 实现
-Config.json(new MyYamlDataConvertor());
+Config.yaml(new MyYamlDataConvertor());
 ```
 
 ## 友情链接
