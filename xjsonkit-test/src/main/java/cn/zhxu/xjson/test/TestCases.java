@@ -2,13 +2,14 @@ package cn.zhxu.xjson.test;
 
 import cn.zhxu.data.DataConvertor;
 import cn.zhxu.xjson.JsonKit;
+import cn.zhxu.xjson.spi.Config;
 import cn.zhxu.xjson.test.cases.*;
 
 public class TestCases {
 
 
     public TestCases(DataConvertor convertor) {
-        JsonKit.init(convertor);
+        Config.json(convertor);
     }
 
 
