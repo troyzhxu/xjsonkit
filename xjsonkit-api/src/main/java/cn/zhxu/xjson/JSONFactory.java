@@ -1,6 +1,6 @@
 package cn.zhxu.xjson;
 
-import com.ejlchina.data.DataConvertor;
+import cn.zhxu.data.DataConvertor;
 
 /**
  * JSON 工厂

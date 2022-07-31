@@ -1,8 +1,8 @@
 package cn.zhxu.xjson.fastjson;
 
 import cn.zhxu.xjson.JSONFactory;
-import com.ejlchina.data.DataConvertor;
-import com.ejlchina.data.fastjson.FastjsonDataConvertor;
+import cn.zhxu.data.DataConvertor;
+import cn.zhxu.data.fastjson.FastjsonDataConvertor;
 
 public class FastjsonFactory implements JSONFactory {
 

@@ -1,8 +1,8 @@
 package cn.zhxu.xjson.jackson;
 
 import cn.zhxu.xjson.JSONFactory;
-import com.ejlchina.data.DataConvertor;
-import com.ejlchina.data.jackson.JacksonDataConvertor;
+import cn.zhxu.data.DataConvertor;
+import cn.zhxu.data.jackson.JacksonDataConvertor;
 
 public class JacksonFactory implements JSONFactory {
 

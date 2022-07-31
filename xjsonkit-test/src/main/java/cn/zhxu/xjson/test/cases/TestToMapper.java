@@ -1,7 +1,7 @@
 package cn.zhxu.xjson.test.cases;
 
 import cn.zhxu.xjson.JSONKit;
-import com.ejlchina.data.Mapper;
+import cn.zhxu.data.Mapper;
 import org.junit.Assert;
 
 import java.util.Objects;

@@ -1,8 +1,8 @@
-# JsonKit
+# xJsonKit
 
 <p>
-    <a href="https://maven-badges.herokuapp.com/maven-central/com.ejlchina/jsonkit/"><img src="https://maven-badges.herokuapp.com/maven-central/com.ejlchina/jsonkit/badge.svg" alt="Maven Central"></a>
-    <a href="https://gitee.com/troyzhxu/jsonkit/blob/master/LICENSE"><img src="https://img.shields.io/hexpm/l/plug.svg" alt="License"></a>
+    <a href="https://maven-badges.herokuapp.com/maven-central/cn.zhxu/xjsonkit/"><img src="https://maven-badges.herokuapp.com/maven-central/cn.zhxu/xjsonkit/badge.svg" alt="Maven Central"></a>
+    <a href="https://gitee.com/troyzhxu/xjsonkit/blob/master/LICENSE"><img src="https://img.shields.io/hexpm/l/plug.svg" alt="License"></a>
     <a href="https://github.com/troyzhxu"><img src="https://img.shields.io/badge/%E4%BD%9C%E8%80%85-troyzhxu-orange.svg" alt="Troy.Zhou"></a>
 </p>
 
@@ -18,7 +18,7 @@
 
 ```xml
 <dependency>
-    <groupId>com.ejlchina</groupId>
+    <groupId>cn.zhxu</groupId>
     <artifactId>xjsonkit-api</artifactId>
     <version>1.3.3</version>
 </dependency>
@@ -28,7 +28,7 @@
 
 ```xml
 <dependency>
-    <groupId>com.ejlchina</groupId>
+    <groupId>cn.zhxu</groupId>
     <artifactId>jsonkit-jackson</artifactId>
     <version>1.3.3</version>
 </dependency>
@@ -38,7 +38,7 @@
 
 ```xml
 <dependency>
-    <groupId>com.ejlchina</groupId>
+    <groupId>cn.zhxu</groupId>
     <artifactId>jsonkit-gson</artifactId>
     <version>1.3.3</version>
 </dependency>
@@ -48,7 +48,7 @@
 
 ```xml
 <dependency>
-    <groupId>com.ejlchina</groupId>
+    <groupId>cn.zhxu</groupId>
     <artifactId>jsonkit-fastjson</artifactId>
     <version>1.3.3</version>
 </dependency>
@@ -59,25 +59,25 @@
 ### Gradle
 
 ```groovy
-implementation 'com.ejlchina:xjsonkit-api:1.3.3'
+implementation 'cn.zhxu:xjsonkit-api:1.3.3'
 ```
 
 使用 Jackson 底层实现：
 
 ```groovy
-implementation 'com.ejlchina:jsonkit-jackson:1.3.3'
+implementation 'cn.zhxu:jsonkit-jackson:1.3.3'
 ```
 
 使用 Gson 底层实现：
 
 ```groovy
-implementation 'com.ejlchina:jsonkit-gson:1.3.3'
+implementation 'cn.zhxu:jsonkit-gson:1.3.3'
 ```
 
 使用 Fastjson 底层实现：
 
 ```groovy
-implementation 'com.ejlchina:jsonkit-fastjson:1.3.3'
+implementation 'cn.zhxu:jsonkit-fastjson:1.3.3'
 ```
 
 以上依赖添加一个即可。

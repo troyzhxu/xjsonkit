@@ -1,12 +1,12 @@
 package cn.zhxu.xjson;
 
-import com.ejlchina.data.DataConvertor;
+import cn.zhxu.data.DataConvertor;
 
 import java.util.ServiceLoader;
 
 public class JSONFinder {
 
-    public static final String FACTORY_KEY = "com.ejlchina.json.JSONFactory";
+    public static final String FACTORY_KEY = "cn.zhxu.json.JSONFactory";
 
     private static DataConvertor _convertor;
 
@@ -61,7 +61,7 @@ public class JSONFinder {
         }
         if (!JSONFactory.class.isAssignableFrom(clazz)) {
             throw new IllegalStateException("the System Property [" + FACTORY_KEY + ": " + className + "]"
-                + " is not subclass of com.ejlchina.json.JSONFactory");
+                + " is not subclass of cn.zhxu.json.JSONFactory");
         }
         try {
             return (JSONFactory) clazz.getDeclaredConstructor().newInstance();

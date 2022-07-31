@@ -3,7 +3,7 @@ package cn.zhxu.xjson.test;
 import cn.zhxu.xjson.JSONFactory;
 import cn.zhxu.xjson.JSONKit;
 import cn.zhxu.xjson.test.cases.*;
-import com.ejlchina.json.test.cases.*;
+import cn.zhxu.json.test.cases.*;
 
 public class TestCases {
 
