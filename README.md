@@ -18,7 +18,7 @@
 implementation 'cn.zhxu:xjsonkit-api:1.5.0'
 ```
 
-该依赖提供了 `JsonKit`、`JsonbKit`、`XmlKit`、`YamlKit` 四个工具类。
+该依赖提供了 `JsonKit`、`JsonbKit`、`XmlKit`、`YamlKit` 四个工具类，它们分别提供了对 JSON / JSONB / XML / YAML 类型数据的正反序列化操作相关的 API。
 
 #### Json 相关实现
 
@@ -161,7 +161,6 @@ Config.json(new JacksonDataConvertor(ObjectMapper));
 ```
 
 其中 `Config` 是 `cn.zhxu.xjson.spi` 包下的配置类，它里面有 `json(..)`、`jsonb(..)`、`xml(..)`、`yaml(..)` 四个配置方法，它们分别作用于 `JsonKit`、`JsonbKit`、`XmlKit`、`YamlKit` 四个工具类。
-使用其它扩展包也类似操作。
 
 ## 友情链接
 
