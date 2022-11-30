@@ -15,7 +15,7 @@
 #### API 依赖
 
 ```groovy
-implementation 'cn.zhxu:xjsonkit-api:1.4.0'
+implementation 'cn.zhxu:xjsonkit-api:1.4.1'
 ```
 
 该依赖提供了 `JsonKit`、`JsonbKit`、`XmlKit`、`YamlKit` 四个工具类，它们分别提供了对 JSON / JSONB / XML / YAML 类型数据的正反序列化操作相关的 API。
@@ -24,36 +24,36 @@ implementation 'cn.zhxu:xjsonkit-api:1.4.0'
 
 ```groovy
 // Fastjson 实现
-implementation 'cn.zhxu:xjsonkit-fastjson:1.4.0'
+implementation 'cn.zhxu:xjsonkit-fastjson:1.4.1'
 // Fastjson2 实现
-implementation 'cn.zhxu:xjsonkit-fastjson2:1.4.0'
+implementation 'cn.zhxu:xjsonkit-fastjson2:1.4.1'
 // Gson 实现
-implementation 'cn.zhxu:xjsonkit-gson:1.4.0'
+implementation 'cn.zhxu:xjsonkit-gson:1.4.1'
 // Jackson 实现
-implementation 'cn.zhxu:xjsonkit-jackson:1.4.0'
+implementation 'cn.zhxu:xjsonkit-jackson:1.4.1'
 // Snack3 实现
-implementation 'cn.zhxu:xjsonkit-snack3:1.4.0'
+implementation 'cn.zhxu:xjsonkit-snack3:1.4.1'
 ```
 
 #### JSONB 相关实现
 
 ```groovy
 // Fastjson2-JSONB 实现
-implementation 'cn.zhxu:xjsonkit-fastjson2-jsonb:1.4.0'
+implementation 'cn.zhxu:xjsonkit-fastjson2-jsonb:1.4.1'
 ```
 
 #### XML 相关实现
 
 ```groovy
 // Jackson Xml
-implementation 'cn.zhxu:xjsonkit-jackson-xml:1.4.0'
+implementation 'cn.zhxu:xjsonkit-jackson-xml:1.4.1'
 ```
 
 #### YAML 相关实现
 
 ```groovy
 // Jackson Yaml
-implementation 'cn.zhxu:xjsonkit-jackson-yaml:1.4.0'
+implementation 'cn.zhxu:xjsonkit-jackson-yaml:1.4.1'
 ```
 
 ## 使用说明
