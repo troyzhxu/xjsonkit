@@ -41,14 +41,14 @@ public class Config {
 
     public static DataConvertor xml() {
         if (xml == null) {
-            xml = JsonbFactory.find();
+            xml = XmlFactory.find();
         }
         return xml;
     }
 
     public static DataConvertor yaml() {
         if (yaml == null) {
-            yaml = JsonbFactory.find();
+            yaml = YamlFactory.find();
         }
         return yaml;
     }
