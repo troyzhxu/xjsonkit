@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>cn.zhxu</groupId>
 	<artifactId>xjsonkit</artifactId>
-	<version>1.4.2</version>
+	<version>1.4.3</version>
 	<name>JsonKit</name>
 
 	<packaging>pom</packaging>
@@ -25,7 +25,7 @@
 
 	<properties>
 		<java-version>1.8</java-version>
-		<data.version>1.5.2</data.version>
+		<data.version>1.5.3</data.version>
 		<junit.version>4.13.2</junit.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -63,7 +63,7 @@
 		<connection>scm:git:https://gitee.com/troyzhxu/xjsonkit.git</connection>
 		<developerConnection>scm:git:https://gitee.com/troyzhxu/xjsonkit.git</developerConnection>
 		<url>https://gitee.com/troyzhxu/xjsonkit</url>
-		<tag>v1.4.2</tag>
+		<tag>v1.4.3</tag>
 	</scm>
 
 	<distributionManagement>
