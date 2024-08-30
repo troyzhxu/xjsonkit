@@ -139,6 +139,25 @@ public class XmlKit {
     }
 
     /**
+     * 对象转 XML 字符串
+     * @param object 对象
+     * @return XML 字符串
+     */
+    public static String toXml(Object object, boolean pretty) {
+        return Config.xml().serialize(object, pretty);
+    }
+
+    /**
+     * 对象转 XML 格式化字符串
+     * @param object 对象
+     * @return JSON 字符串
+     * @since v1.5.0
+     */
+    public static String toPretty(Object object) {
+        return Config.json().serialize(object, true);
+    }
+
+    /**
      * 对象转 XML 字节数组
      * @param object 对象
      * @return XML 字节数组
