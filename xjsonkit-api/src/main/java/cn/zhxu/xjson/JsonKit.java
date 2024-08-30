@@ -139,6 +139,27 @@ public class JsonKit {
     }
 
     /**
+     * 对象转 JSON 字符串
+     * @param object 对象
+     * @param pretty 是否格式化
+     * @return JSON 字符串
+     * @since v1.5.0
+     */
+    public static String toJson(Object object, boolean pretty) {
+        return Config.json().serialize(object, pretty);
+    }
+
+    /**
+     * 对象转 JSON 格式化字符串
+     * @param object 对象
+     * @return JSON 字符串
+     * @since v1.5.0
+     */
+    public static String toPretty(Object object) {
+        return Config.json().serialize(object, true);
+    }
+
+    /**
      * 对象转 JSON 字节数组
      * @param object 对象
      * @return JSON 字节数组
