@@ -141,6 +141,7 @@ public class XmlKit {
     /**
      * 对象转 XML 字符串
      * @param object 对象
+     * @param pretty 是否格式化
      * @return XML 字符串
      */
     public static String toXml(Object object, boolean pretty) {
