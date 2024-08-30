@@ -145,7 +145,7 @@ String json = JsonKit.toJson(user);     // 转换为 JSON 字符串
 System.out.println(json);               // 输出 {"age":20,"name":"Jack"}
 ```
 
-### JSON - XML - YAML - JSONB 互转
+### 格式互转
 
 * JSON 对象 转 XML、YAML、JSONB
 
