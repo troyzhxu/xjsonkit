@@ -80,7 +80,7 @@
 	<build>
 	
 		<plugins>
-		
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-release-plugin</artifactId>
@@ -101,9 +101,8 @@
 						<id>default-compile</id>
 						<configuration>
 							<jdkToolchain>
-								<version>11</version>
+								<version>8</version>
 							</jdkToolchain>
-							<release>11</release>
 						</configuration>
 					</execution>
 					<execution>
@@ -124,6 +123,7 @@
 					</jdkToolchain>
 					<source>${java-version}</source>
 					<target>${java-version}</target>
+					<encoding>${project.build.sourceEncoding}</encoding>
 				</configuration>
 			</plugin>
 		
