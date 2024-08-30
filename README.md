@@ -83,6 +83,7 @@ mapper.forEach((key, data) -> {
 });
 
 System.out.println(mapper);             // 输出 {"name":"Jack","age":20}
+System.out.println(mapper.toPretty());  // 格式化输出
 ```
 
 ### 反序列化 toArray
@@ -108,6 +109,7 @@ array.forEach(((index, data) -> {
 }));
 
 System.out.println(array);              // 输出 [20,{"name":"Jack"},"JsonKit"]
+System.out.println(array.toPretty());   // 格式化输出
 ```
 
 ### 反序列化 toBean
@@ -141,8 +143,10 @@ user.setName("Jack");
 user.setAge(20);
 
 String json = JsonKit.toJson(user);     // 转换为 JSON 字符串
-
 System.out.println(json);               // 输出 {"age":20,"name":"Jack"}
+
+String pretty = JsonKit.toPretty(user); // 转换为 格式化的 JSON 字符串
+String pretty = JsonKit.toJson(user, true);
 ```
 
 ### 格式互转
