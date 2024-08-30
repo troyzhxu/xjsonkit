@@ -145,6 +145,58 @@ String json = JsonKit.toJson(user);     // 转换为 JSON 字符串
 System.out.println(json);               // 输出 {"age":20,"name":"Jack"}
 ```
 
+### JSON - XML - YAML - JSONB 互转
+
+* JSON 对象 转 XML、YAML、JSONB
+
+```java
+var json = "{\"id\":1,\"name\":\"Jack\",\"age\":20}";
+// 转 XML
+var xml = XmlKit.toXml(JsonKit.toMapper(json));
+// 转 YAML
+var yaml = XmlKit.toYaml(JsonKit.toMapper(json));
+// 转 JSONB
+var jsonb = JsonbKit.toBytes(JsonKit.toMapper(json));
+```
+
+* JSON 数组 转 XML、YAML、JSONB
+
+```java
+var json = "[{\"id\":1,\"name\":\"Jack\"},{\"id\":2,\"name\":\"Tom\"}]";
+// 转 XML
+var xml = XmlKit.toXml(JsonKit.toArray(json));
+// 转 YAML
+var yaml = XmlKit.toYaml(JsonKit.toArray(json));
+// 转 JSONB
+var jsonb = JsonbKit.toBytes(JsonKit.toArray(json));
+```
+
+* XML 对象 转 JSON、YAML、JSONB
+
+```java
+var xml = "<root><id>1</id><name>Jack</name><age>20</age></root>";
+// 转 JSON
+var json = JsonKit.toJson(XmlKit.toMapper(xml));
+// 转 YAML
+var yaml = XmlKit.toYaml(XmlKit.toMapper(xml));
+// 转 JSONB
+var jsonb = JsonbKit.toBytes(XmlKit.toMapper(xml));
+```
+
+* XML 数组 转 JSON、YAML、JSONB
+
+```java
+var xml = "<list><item><id>1</id><name>Jack</name></item><item><id>2</id><name>Tom</name></item></list>";
+// 转 JSON
+var json = JsonKit.toJson(XmlKit.toArray(xml));
+// 转 YAML
+var yaml = XmlKit.toYaml(XmlKit.toArray(xml));
+// 转 JSONB
+var jsonb = JsonbKit.toBytes(XmlKit.toArray(xml));
+```
+
+* 等等（YAML 与 JSONB 转其它格式同理）
+
 ## 配置方法
 
 如果已经添加了如 `xjsonkit-jackson` 的底层实现包，则不用任何配置即可正常使用。
